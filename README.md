@@ -9,18 +9,19 @@ Annotation files provided in seperate class files contatining the seperate class
 
 Annotation folder contains .jpg and .txt with their respective annotations
 Annotations/
--Nglove  
--glove
+|-Nglove  
+|-glove
 
 Config folder contains the necessary files that are required for training the object
+
 Config files/
--obj.data #contains path directories of the data for feeding into the training process.
--obj.names #class names of the objects
--yolo-obj.cfg #contains the configurations of the yolo neural network structure
--train.txt #contains the images for feeding into the training
--test.txt #contains images for testing part1
+|-obj.data #contains path directories of the data for feeding into the training process.
+|-obj.names #class names of the objects
+|-yolo-obj.cfg #contains the configurations of the yolo neural network structure
+|-train.txt #contains the images for feeding into the training
+|-test.txt #contains images for testing part1
 
 Darknet folder containing the structure of the darknet which is going to be customized containing the weight and configuration files 
-darknet/
+|-darknet/
 
 For the training structure, darknet57.conv74 has been used. 
