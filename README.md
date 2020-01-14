@@ -8,7 +8,7 @@ Annotations are taken from the footage frames and get stored.
 Annotation files provided in seperate class files contatining the seperate classes
 
 Annotation folder contains .jpg and .txt with their respective annotations
-Annotations
+Annotations/
 -Nglove  
 -glove
 
