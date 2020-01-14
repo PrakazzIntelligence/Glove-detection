@@ -29,3 +29,6 @@ Darknet folder containing the structure of the darknet which is going to be cust
 For the training structure, darknet57.conv74 has been used and can be downloaded from the below link
 
 wget https://pjreddie.com/media/files/darknet53.conv.74
+
+A video with person discovery is done
+The glove detection process is on training. 
