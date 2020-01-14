@@ -3,6 +3,8 @@ Detection of gloves in the hands of employees through the survillence cameras
 
 Video feed is taken from the survillance feed of the CCTV footages. 
 
+Done through Custom weight file generation.
+
 Annotations are taken from the footage frames and get stored. 
 
 Annotation files provided in seperate class files contatining the seperate classes
