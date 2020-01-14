@@ -23,12 +23,7 @@ Config files/
 |-yolo-obj.cfg #contains the configurations of the yolo neural network structure
 |-train.txt #contains the images for feeding into the training
 |-test.txt #contains images for testing part1
-Config files/
-|-obj.data #contains path directories of the data for feeding into the training process.
-|-obj.names #class names of the objects
-|-yolo-obj.cfg #contains the configurations of the yolo neural network structure
-|-train.txt #contains the images for feeding into the training
-|-test.txt #contains images for testing part1
+
 
 Darknet folder containing the structure of the darknet which is going to be customized containing the weight and configuration files 
 |-darknet/
