@@ -62,4 +62,28 @@ Now run the file (in Ubuntu) - ./darknet detector train <config file> <data file
   
   After successful training a yolo-obj.weight file will be generated.
 
-The glove detection process is on training. 
+The glove detection process is on training.
+
+Timelines and guidelines
+
+
+**The model development is explained as follows. 
+Intially, the footage from the CCTV is downloaded in the form of a video and converted into each frame per second for processing the frames with better clarity. 
+The frames are then needed to be annotated for specifying the object to be identified.
+The objects present in the frames are annotated and processed onto yolo format.
+The yolo format data contains bounding values for the annotations.
+The locations of the files are specified onto a training file and reduced into a testing file
+A customized neural network in the form of darknet is taken.
+The network structure is given the form of darknet53.conv74 file.
+The configuration files are also created and the training process is initiated with darknet, obj.data and yolo-obj.cfg file(containing the custom neural network).
+After, the training a weight file will be generated which can be deployed into the model.
+
+Length of the video:  2mins 54 secs
+
+S.No 	Tasks	Activities 	Time taken (in hrs)
+1.	Frame conversion	Time spent for conversion of frames	0.04
+2.	Glove Annotation	Time taken for annotation	0.30
+3.	Creating Config files	Time taken for specifying config files	3.0
+4.	Customizing neural networks	Time taken for customizing neural network structure	0.30
+5.	Testing pretrained model	Time taken for testing the pretrained weight model	0.15
+**Total time taken	4.19 hrs
