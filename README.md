@@ -14,9 +14,9 @@ Annotation folder contains .jpg and .txt with their respective annotations
 
 Annotations/
 
-|-Nglove  
+|-Nglove  #containing annotations and corresponding images of persons not wearing gloves for training process
 
-|-glove
+|-glove #containing annotations and corresponding images of persons wearing gloves for training process
 
 Config folder contains the necessary files that are required for training the object
 
@@ -28,9 +28,9 @@ Config files/
 
 |-yolo-obj.cfg #contains the configurations of the yolo neural network structure\
 
-|-train.txt #contains the images for feeding into the training
+|-train.txt #contains location of the images for feeding into the training
 
-|-test.txt #contains images for testing part1
+|-test.txt #contains location of the images for testing part1
 
 
 Darknet folder containing the structure of the darknet which is going to be customized containing the weight and 
@@ -43,5 +43,23 @@ For the training structure, darknet57.conv74 has been used and can be downloaded
 
 wget https://pjreddie.com/media/files/darknet53.conv.74
 
-A video with person discovery is done
+**A video with person discovery is done with the pretrained weights is shown in pretrained_output.mp4
+
+Training Process:
+Input : Convert the video into frames and annotate the images 
+Format: Annotations is taken in the yolo data format
+
+Config files:
+
+- Create a obj.names containing the names of the classes
+
+- Create a obj.data file specifying the location of each specified files.
+
+- Create a yolo-obj.cfg file containing the structure in specification with classes for Neural network layers
+
+Now run the file (in Ubuntu) - ./darknet detector train <config file> <data file> <training network>
+   compile
+  
+  After successful training a yolo-obj.weight file will be generated.
+
 The glove detection process is on training. 
